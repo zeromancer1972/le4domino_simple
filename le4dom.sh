@@ -10,7 +10,7 @@ echo "*** CATCHING CERTS ***"
 
 cd letsencrypt
 ../letsencrypt/letsencrypt-auto certonly --register-unsafely-without-email --standalone -d notesx.net,www.notesx.net,aveedo.notesx.net,oliverbusse.notesx.net,bookmarks.notesx.net
-# ../letsencrypt/letsencrypt-auto --test-cert certonly --register-unsafely-without-email --standalone -d notesx.net,www.notesx.net,aveedo.notesx.net,oliverbusse.notesx.net,bookmarks.notesx.net
+# ../letsencrypt/letsencrypt-auto certonly --test-cert --register-unsafely-without-email --standalone -d notesx.net,www.notesx.net,aveedo.notesx.net,oliverbusse.notesx.net,bookmarks.notesx.net
 
 echo "*** COPYING... ***"
 

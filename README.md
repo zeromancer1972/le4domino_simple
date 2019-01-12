@@ -48,7 +48,7 @@ sh le4domino_simple/le4dom.sh
 
 ## Warning
 
-Do not run the script for testing or more than once or twice BEFORE you are sure that everything is working. If you want to test run it, then comment out line 12 and uncomment the next line. This will run the script with the
+Do not run the script for testing or more than once or twice BEFORE you are sure that everything is working. If you want to test run it, then comment out line 13 and uncomment the next line. This will run the script with the
 
 ```plaintext
 --test-cert 

@@ -26,5 +26,9 @@ sudo -H -u notes bash -c '/opt/ibm/domino/bin/tools/startup kyrtool =/local/note
 sudo -H -u notes bash -c '/opt/ibm/domino/bin/tools/startup kyrtool =/local/notesdata/notes.ini import keys -k /local/notesdata/keystore2.kyr -i /tmp/privkey1.pem'
 sudo -H -u notes bash -c '/opt/ibm/domino/bin/tools/startup kyrtool =/local/notesdata/notes.ini import certs -k /local/notesdata/keystore2.kyr -i /tmp/cert1.pem'
 
+echo "*** CLEANING UP ***"
+
+rm /tmp/*.pem -f
+
 echo "*** DONE. ***"
 

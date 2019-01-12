@@ -12,8 +12,8 @@ cd letsencrypt
 
 # replace the -d option with your domain(s)
 
-../letsencrypt/letsencrypt-auto certonly --register-unsafely-without-email --standalone -d notesx.net,www.notesx.net,aveedo.notesx.net,oliverbusse.notesx.net,bookmarks.notesx.net
-# ../letsencrypt/letsencrypt-auto certonly --test-cert --register-unsafely-without-email --standalone -d notesx.net,www.notesx.net,aveedo.notesx.net,oliverbusse.notesx.net,bookmarks.notesx.net
+./letsencrypt-auto certonly --register-unsafely-without-email --standalone -d notesx.net,www.notesx.net,aveedo.notesx.net,oliverbusse.notesx.net,bookmarks.notesx.net
+# ./letsencrypt-auto certonly --test-cert --register-unsafely-without-email --standalone -d notesx.net,www.notesx.net,aveedo.notesx.net,oliverbusse.notesx.net,bookmarks.notesx.net
 
 echo "*** COPYING... ***"
 

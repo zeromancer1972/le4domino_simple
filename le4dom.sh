@@ -9,10 +9,15 @@ rm /etc/letsencrypt/renewal/*
 echo "*** CATCHING CERTS ***"
 
 cd letsencrypt
+
+# replace the -d option with your domain(s)
+
 ../letsencrypt/letsencrypt-auto certonly --register-unsafely-without-email --standalone -d notesx.net,www.notesx.net,aveedo.notesx.net,oliverbusse.notesx.net,bookmarks.notesx.net
 # ../letsencrypt/letsencrypt-auto certonly --test-cert --register-unsafely-without-email --standalone -d notesx.net,www.notesx.net,aveedo.notesx.net,oliverbusse.notesx.net,bookmarks.notesx.net
 
 echo "*** COPYING... ***"
+
+# replace the last folder name with the first domain name you used above
 
 cp /etc/letsencrypt/archive/notesx.net/* /tmp
 chmod 777 /tmp/*.pem

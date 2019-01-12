@@ -26,6 +26,14 @@ Once you've done it just clone this repo on your machine and make the .sh file e
 chmod 755 le4domino_simple/le4dom.sh
 ```
 
+The folder structure should look like this:
+
+```plaintext
+/root
+    /letsencrypt
+    /le4domino_simple
+```
+
 You have to edit the file to fit your domain names you want to register. The first domain name also controls the name of the folder where Letsencrypt stores the `.pem` files. Change the folder names in the script accordingly.
 
 The script also assumes that your Domino server user is called "notes".
